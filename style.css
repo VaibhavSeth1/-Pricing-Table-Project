@@ -1,0 +1,165 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: "Sono", sans-serif;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+
+}
+
+.pricing-plan:hover {
+    transform: scale(1.1);
+}
+
+.pricing-plan {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+#plan1 {
+    background-image: linear-gradient(180deg, #75aef3, 50%, #ca2ebd);
+}
+
+#plan2 {
+    background-image: linear-gradient(180deg, #f342ce, 50%, #fee378);
+}
+
+#plan3 {
+    background-image: linear-gradient(180deg, #8552e0, 50%, #3dfa86);
+}
+
+.plan-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    color: white;
+    font-size: ;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.plan-features {
+    color: white;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    font-size: small;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+    color: black;
+    border-radius: 25px;
+    border: none;
+
+}
+
+/* Hint: What can you do with a media query and flexbox? */
+
+
+@media (max-width: 1250px) {
+
+    .pricing-container {
+        flex-direction: column;
+        height: 100%;
+        margin: 100px;
+        gap: 100px;
+
+    }
+
+    .pricing-plan {
+        max-height: 1000px;
+        min-width: 800px;
+        border-radius: 50px;
+
+    }
+
+
+
+
+    .plan-title {
+        font-size: 4rem;
+    }
+
+
+
+    .plan-price {
+
+        font-size: 5rem;
+    }
+
+
+    .plan-features {
+        font-size: 3rem;
+    }
+
+
+    button {
+        font-size: 2rem;
+        padding: 30px 60px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+/* @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+          height: 100%;
+        
+        }
+      
+        .pricing-plan {
+            max-height: 900px;
+        min-width: 800px;
+        }
+      
+       
+        .plan-title {
+          font-size: 5rem;
+        }
+      
+        .plan-price {
+          font-size: 6rem;
+        }
+      
+        .plan-features {
+          font-size: 3rem;
+        }
+      
+        button {
+          font-size: 2rem;
+          padding: 30px 60px;
+        }
+      }
+     */
